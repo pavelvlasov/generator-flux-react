@@ -1,0 +1,37 @@
+{
+  "name": "generator-flux-react",
+  "version": "0.1.0",
+  "description": "A yeoman generator for apps, based on Flux/React architecture",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freakycue/flux-react-generator.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "flux",
+    "react",
+    "jest",
+    "gulp",
+    "protractor"
+  ],
+  "author": "Pavel Vlasov <freakycue@gmail.com>",
+  "license": "MIT",
+  "test": "mocha",
+  "bugs": {
+    "url": "https://github.com/freakycue/flux-react-generator/issues"
+  },
+  "homepage": "https://github.com/freakycue/flux-react-generator",
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "slug": "^0.8.0",
+    "yeoman-generator": "^0.18.5",
+    "yosay": "^1.0.1"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  }
+}
