@@ -1,6 +1,8 @@
 'use strict';
 
 var gulp = require('gulp');
-var requireFolder = require('require-folder-tree');
+var requireDirectory = require('require-directory');
 
-requireFolder('./gulp');
+requireDirectory(module, './gulp');
+
+gulp.task('build', ['js']);

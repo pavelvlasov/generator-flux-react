@@ -17,7 +17,9 @@
   ],
   "author": "Pavel Vlasov <freakycue@gmail.com>",
   "license": "MIT",
-  "test": "mocha",
+  "scripts": {
+    "test": "mocha -t 10000"
+  },
   "bugs": {
     "url": "https://github.com/freakycue/flux-react-generator/issues"
   },
@@ -32,6 +34,7 @@
     "yo": ">=1.0.0"
   },
   "devDependencies": {
-    "mocha": "^2.1.0"
+    "mocha": "^2.1.0",
+    "shelljs": "^0.3.0"
   }
 }
