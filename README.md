@@ -1,8 +1,3 @@
-generator-flux-react
-====================
-
-A yeoman generator for apps, based on Flux/React architecture
-
 # generator-flux-react
 
 > [Flux](http://facebook.github.io/flux/)/[React](http://facebook.github.io/react/) application generator
