@@ -3,7 +3,7 @@ generator-flux-react
 
 A yeoman generator for apps, based on Flux/React architecture
 
-# generator-flux
+# generator-flux-react
 
 > [Flux](http://facebook.github.io/flux/)/[React](http://facebook.github.io/react/) application generator
 
@@ -46,7 +46,7 @@ During install-time, you will be prompted to enter some information to help crea
 * __Application Description__ (_string_): Describe your application in one sentence, to be used in `package.json` and the generated `README.md`
 * __css preprocessor__: Choose between `less` and `sass` css preprocessors
 
-
+Generator is still in development.
 ### TODO
 * generators for stores and actions
 * unit testing with `jest`
