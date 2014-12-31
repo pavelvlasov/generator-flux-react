@@ -24,7 +24,7 @@ $ npm install -g yo
 
 ### Installing the generator
 
-To install generator-flux from npm, run:
+To install generator-flux-react from npm, run:
 
 ```bash
 $ npm install -g generator-flux-react
