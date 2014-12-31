@@ -1,0 +1,5 @@
+/* this is your main <% if (less) { %>less<% } else { %>sass<% } %> file */
+
+h1 {
+  font-size: 100%;
+}

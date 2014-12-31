@@ -39,16 +39,26 @@ module.exports = yeoman.Base.extend({
       name: 'appDesc',
       message: 'Enter your app description',
       default: ''
+    }, {
+      type: 'list',
+      name: 'cssPreprocessor',
+      message: 'Which css preprocessor to use?',
+      default: 'less',
+      choices: ['less', 'sass']
     }];
 
-    this.prompt(prompts, (function (props) {
-      this.appName = props.appName;
-      this.appSlug = props.appSlug;
-      this.appDesc = props.appDesc;
+    this.prompt(prompts, (function (answers) {
+      this.appName = answers.appName;
+      this.appSlug = answers.appSlug;
+      this.appDesc = answers.appDesc;
+      this.less = false;
+      this[answers.cssPreprocessor] = true;
       done();
     }).bind(this));
   },
   app: function () {
-    this.directory('./', './');
+    var preprocessor = this.less ? 'less' : 'scss';
+    this.directory('./bundle', './');
+    this.template('main.css', 'src/' + preprocessor + '/main.' + preprocessor);
   }
 });

@@ -8,7 +8,7 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var watchify = require('watchify');
 var browserify = require('browserify');
-var cssPreprocessor = require('gulp-{{#if less}}less{{else}}sass{{/if}}');
+var cssPreprocessor = require('gulp-<% if (less) { %>less<% } else { %>sass<% } %>');
 
 var builder = browserify('./src/js/app.js', {
   transform: 'reactify'
@@ -36,9 +36,9 @@ function bundle(bundler) {
 }
 
 gulp.task('css', function () {
-  gulp.src('./src/{{#if less}}less{{else}}scss{{/if}}/main.{{#if less}}less{{else}}scss{{/if}}')
-  .pipe(sourcemaps.init())
-  .pipe(cssPreprocessor())
-  .pipe(sourcemaps.write('./maps'))
-  .pipe(gulp.dest('./dist/css'));
+  gulp.src('./src/<% if (less) { %>less<% } else { %>scss<% } %>/main.<% if (less) { %>less<% } else { %>scss<% } %>')
+    .pipe(sourcemaps.init())
+    .pipe(cssPreprocessor())
+    .pipe(sourcemaps.write('./maps'))
+    .pipe(gulp.dest('./dist/css'));
 });

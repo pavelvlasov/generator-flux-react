@@ -1,7 +1,7 @@
 
-# <%= appName %> (<%= appSlug %>)
+# <%=appName%> (<%=appSlug%>)
 
-> <%= appDesc %>
+<%=appDesc%>
 
 ## Running your project
 
@@ -21,11 +21,6 @@ $ npm run build
 ## Generating Additional Code
 
 You can add additional functionality to your application by invoking the subgenerators included in the Flux Generator. You can add components using the following commands:
-
-#### Dispatchers
-```bash
-$ yo flux:dispatcher DispatcherName
-```
 
 #### Stores
 ```bash
