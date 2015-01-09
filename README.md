@@ -1,9 +1,6 @@
-generator-flux-react
-====================
+# generator-flux-react
 
-A yeoman generator for apps, based on Flux/React architecture
-
-# generator-flux
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/freakycue/generator-flux-react?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > [Flux](http://facebook.github.io/flux/)/[React](http://facebook.github.io/react/) application generator
 
@@ -46,7 +43,7 @@ During install-time, you will be prompted to enter some information to help crea
 * __Application Description__ (_string_): Describe your application in one sentence, to be used in `package.json` and the generated `README.md`
 * __css preprocessor__: Choose between `less` and `sass` css preprocessors
 
-
+Generator is still in development.
 ### TODO
 * generators for stores and actions
 * file server gulp task
