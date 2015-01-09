@@ -49,7 +49,6 @@ During install-time, you will be prompted to enter some information to help crea
 
 ### TODO
 * generators for stores and actions
-* unit testing with `jest`
 * file server gulp task
 * jshint task
 * e2e testing with `protractor`

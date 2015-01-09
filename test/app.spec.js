@@ -75,6 +75,10 @@ describe('App Generator', function () {
 
       done();
     });
+
+    it('run tests', function () {
+      exec('npm test');
+    });
   });
 
   describe('generate app with sass compiler', function () {

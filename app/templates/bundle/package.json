@@ -16,11 +16,13 @@
     "react": "^0.12.2",
     "reactify": "^0.17.1",
     "flux": "^2.0.1",
+    "jest-cli": "^0.2.1",
     "require-directory": "^2.0.0",
     <% if (less) { %>"gulp-less": "2.0.1"<% } else { %>"gulp-sass": "1.2.4"<% } %>
   },
   "scripts": {
     "start": "gulp build && open dist/index.html && gulp watch",
-    "build": "gulp"
+    "build": "gulp",
+    "test": "jest"
   }
 }
