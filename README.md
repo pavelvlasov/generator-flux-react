@@ -1,5 +1,7 @@
 # generator-flux-react
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/freakycue/generator-flux-react?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > [Flux](http://facebook.github.io/flux/)/[React](http://facebook.github.io/react/) application generator
 
 
