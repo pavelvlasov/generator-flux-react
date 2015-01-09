@@ -1,5 +1,7 @@
 'use strict';
 
+/* global jest: false */
+
 jest.autoMockOff();
 
 describe('Dispatcher', function() {
@@ -23,7 +25,7 @@ describe('Dispatcher', function() {
     var payload = {};
 
     var listener1Done = false;
-    var listener1 = function(pl) {
+    var listener1 = function() {
       Dispatcher.waitFor([index2, index4]);
       // Second, third, and fourth listeners should have now been called
       expect(listener2Done).toBe(true);
@@ -31,10 +33,10 @@ describe('Dispatcher', function() {
       expect(listener4Done).toBe(true);
       listener1Done = true;
     };
-    var index1 = Dispatcher.register(listener1);
+    Dispatcher.register(listener1);
 
     var listener2Done = false;
-    var listener2 = function(pl) {
+    var listener2 = function() {
       Dispatcher.waitFor([index3]);
       expect(listener3Done).toBe(true);
       listener2Done = true;
@@ -42,13 +44,13 @@ describe('Dispatcher', function() {
     var index2 = Dispatcher.register(listener2);
 
     var listener3Done = false;
-    var listener3 = function(pl) {
+    var listener3 = function() {
       listener3Done = true;
     };
     var index3 = Dispatcher.register(listener3);
 
     var listener4Done = false;
-    var listener4 = function(pl) {
+    var listener4 = function() {
       Dispatcher.waitFor([index3]);
       expect(listener3Done).toBe(true);
       listener4Done = true;

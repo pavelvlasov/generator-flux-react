@@ -50,7 +50,7 @@ describe('App Generator', function () {
     });
 
     it('install dependencies', function () {
-      this.timeout(60000);
+      this.timeout(120000);
       shell.cd(testDirectory);
       exec('npm install');
     });
@@ -77,7 +77,12 @@ describe('App Generator', function () {
     });
 
     it('run tests', function () {
+      this.timeout(30000);
       exec('npm test');
+    });
+
+    it('run jshint', function () {
+      exec('gulp jshint');
     });
   });
 
@@ -99,7 +104,7 @@ describe('App Generator', function () {
     });
 
     it('install dependencies', function () {
-      this.timeout(60000);
+      this.timeout(120000);
       shell.cd(testDirectory);
       exec('npm install');
     });

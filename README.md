@@ -47,5 +47,4 @@ Generator is still in development.
 ### TODO
 * generators for stores and actions
 * file server gulp task
-* jshint task
 * e2e testing with `protractor`
